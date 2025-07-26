@@ -42,7 +42,7 @@ function AddForm() {
   };
 
   try {
-    const res = await fetch("https://habitapp-kmf1.onrender.com/add-list", {
+    const res = await fetch("http://localhost:3000/add-list", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
