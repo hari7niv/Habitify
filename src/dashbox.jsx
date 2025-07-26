@@ -5,7 +5,7 @@ function Dashbox(){
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        fetch(`https://habitapp-kmf1.onrender.com/status-counts?username=${localStorage.getItem("username")}`)
+        fetch(`http://localhost:3000/status-counts?username=${localStorage.getItem("username")}`)
           .then((res) => res.json())
           .then((data) => setData(data))
           .catch((err) => console.error('Error fetching status data:', err));
