@@ -9,7 +9,7 @@ function Dashboard() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch(`https://habitapp-kmf1.onrender.com/priority-counts?username=${localStorage.getItem("username")}`)
+    fetch(`http://localhost:3000/priority-counts?username=${localStorage.getItem("username")}`)
       .then((res) => res.json())
       .then((data) => setData(data))
       .catch((err) => console.error('Error fetching priority data:', err));
