@@ -9,7 +9,7 @@ function Good() {
   const username = localStorage.getItem("username");
 
 useEffect(() => {
-  fetch(`https://habitapp-kmf1.onrender.com/get-list?username=${username}`)
+  fetch(`http://localhost:3000/get-list?username=${username}`)
     .then((res) => res.json())
     .then((data) => {
       setHabits(data);
@@ -28,7 +28,7 @@ useEffect(() => {
 
     try {
       const username = localStorage.getItem("username");
-const res = await fetch(`https://habitapp-kmf1.onrender.com/delete-list/${id}?username=${username}`, {
+const res = await fetch(`http://localhost:3000/delete-list/${id}?username=${username}`, {
   method: "DELETE",
 });
 
