@@ -1,0 +1,17 @@
+.add-habit  button{
+    position: fixed;
+    bottom: 2%;
+    left: 50%;
+    padding: 16px;
+    transform: translateX(-50%);
+    z-index: 1000;
+    border-radius: 10px;
+    border: none;
+    background-color: #0439aa;
+    cursor:pointer;
+    color: white;
+}
+
+.add-habit  button:hover{
+    background-color: #00246f;
+}

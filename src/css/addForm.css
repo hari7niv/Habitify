@@ -1,0 +1,70 @@
+.form{
+    margin-left: 21%;
+    margin-top: 20px;
+    width: 70%;
+    padding: 20px;
+    background-color: #FFFFFF;
+    color: #2D3436;
+    border: 1px solid  #DFE6E9;
+    box-shadow: 0 2px 8px rgba(45, 52, 54, 0.1);
+    border-radius: 20px;
+
+}
+.form input,select,textarea{
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+    border:  1px solid #DFE6E9;
+    color: #2D3436;
+    border-radius: 5px;
+}
+::placeholder {
+  color: #B2BEC3;
+  font-style: italic;
+}
+input:focus, textarea:focus ,select:focus{
+  border: 2px solid #74B9FF;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.2);
+}
+.form textarea{
+    height: 100px;
+}
+.form label{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+.form input[type="submit"]{
+    background-color:   #2D7D7D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding:12px 24px;
+    font-weight: 600;
+    box-shadow: 0 2px 4px rgba(45, 125, 125, 0.2);
+  transition: all 0.2s ease;
+}
+
+.form input[type="submit"]:hover{
+     background: #246868;
+    box-shadow: 0 3px 6px rgba(45, 125, 125, 0.25);
+}
+@media (max-width: 600px) {
+  .form label {
+    font-size: 16px;
+  }
+
+  .form input,
+  .form select,
+  .form textarea {
+    font-size: 14px;
+  }
+
+  .form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+}

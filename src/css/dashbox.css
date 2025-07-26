@@ -1,0 +1,57 @@
+.status-summary{
+    width: 90%;
+    height:150px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.status-counts{
+    margin-top: 70px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.status-summary h1{
+    text-align: center;
+    color: #2D3436;
+    margin-top: 5px;
+}
+.completed strong{
+    color: #08982aff;
+    font-weight:900;
+}
+.in-progress strong{
+    color: #9a7807ff;
+    font-weight:900;
+}
+.pending strong{
+    color:#084298;
+    font-weight:900;
+}
+
+.status-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.pending-dot {
+  background-color: #f39c12; /* orange */
+}
+
+.progress-dot {
+  background-color: #3498db; /* blue */
+}
+
+.completed-dot {
+  background-color: #2ecc71; /* green */
+}

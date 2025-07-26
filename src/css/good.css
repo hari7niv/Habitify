@@ -1,0 +1,11 @@
+.good {
+  margin-left: 20%;
+  padding: 20px;
+  width: 80%;
+}
+.good h1 {
+  text-align: center;
+  color: #2D3436;
+  font-size: 36px;
+  margin-bottom: 20px;
+}

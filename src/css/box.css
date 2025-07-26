@@ -1,0 +1,101 @@
+.box {
+    /* Updated background color */
+    background-color: #FFFFFF;
+    border: #DFE6E9 solid 1px;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+    display: flex; /* Use flexbox to easily put content and button at ends */
+    flex-direction: column; /* Stack content vertically */
+    justify-content: space-between; /* Pushes content up and button down */
+    min-height: 180px;
+    margin-bottom: 30px;
+    margin-top: 25px; /* Ensure a minimum height for consistency */
+}
+
+.box-content {
+    flex-grow: 1; /* Allows content to take up available space */
+}
+
+.box-content h2 {
+    margin-top: 0; /* Remove default top margin for h2 */
+    margin-bottom: 10px;
+    font-size: 30px; /* Slightly smaller font size to match UI */
+    color: #2D3436; /* Darker text */
+    font-weight: 700; /* Slightly bolder */
+}
+
+.box-content p {
+    margin: 5px 0;
+    color: #5c6163; /* Softer text color */
+    font-size:20px; /* Slightly smaller font size */
+    line-height: 1.7;
+}
+
+.box-content strong {
+    color: #2d2d2d;
+    font-weight: 500; /* Make labels slightly darker */
+}
+
+.priority {
+    font-weight: 200; /* Bolder */
+    padding: 2px 8px; /* Smaller padding to match tag size */
+    border-radius: 4px; /* Less rounded for a squarer tag look */
+    color: #000000;
+    text-transform: capitalize;
+    font-size: 0.8em; /* Smaller font for the tag */
+}
+
+.priority.low {
+    background-color: #A29BFE; 
+    color:  #2D3436;/* green */
+}
+
+.priority.medium {
+    background-color:  #74B9FF;
+    color: #2D3436; /* yellow/orange */
+}
+
+.priority.high {
+    background-color: #FF7E6D;
+    color: #FFFFFF; /* red */
+}
+
+.box-actions {
+    margin-top: 25px; /* More space above the button */
+    text-align: right;
+    display: flex; /* Use inline-flex to align the button properly */
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Adds spacing between dropdown and button */
+  margin-top: 25px;
+}
+.box-status select {
+  padding: 8px 16px;
+  border-radius: 6px;
+  line-height: 1;
+  appearance: none; /* Helps normalize dropdown across browsers */
+  box-sizing: border-box;
+}
+
+
+.delete-btn {
+  background-color: #FF7E6D;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  height: 40px; /* Match dropdown height */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.delete-btn:hover {
+    background-color: #d62d2d; /* Darker red on hover */
+}
+
